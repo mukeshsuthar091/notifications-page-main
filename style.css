@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.main-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(210, 60%, 98%);
+    padding: 6% 0;
+}
+
+.notification-container {
+    width: 55%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.head h1 {
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+}
+
+.Ncount {
+    background-color: hsl(219, 85%, 26%);
+    color: hsl(0, 0%, 100%);
+    padding: 3px 13px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+
+.head a {
+    text-decoration: none;
+    color: hsl(219, 12%, 42%);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.head a:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.notification {
+    display: flex;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.unread {
+    background-color: hsl(211, 68%, 94%);
+}
+
+.notification img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.text p {
+    font-weight: 500;
+    color: hsl(219, 12%, 42%);
+    margin-bottom: 6px;
+}
+
+.text p a {
+    text-decoration: none;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.text p a:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.name {
+    color: hsl(224, 21%, 14%);
+    margin-right: 3px;
+}
+
+.link {
+    color: hsl(219, 11%, 35%);
+    margin-left: 3px;
+}
+
+.Blink {
+    color: hsl(219, 85%, 26%);
+}
+
+.text p:nth-child(2) {
+    color: hsl(219, 14%, 63%);
+    margin-bottom: 0;
+}
+
+.message p {
+    border: 2px solid hsl(205, 33%, 90%);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.message p:hover {
+    background-color: hsl(205, 33%, 90%);
+}
+
+.notification:nth-child(6) {
+    justify-content: space-between;
+}
+
+.left-side {
+    display: flex;
+    align-self: center;
+}
+
+.chess-img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding: 3px;
+    transition: 0.3s;
+}
+
+.chess-img:hover {
+    background-color: hsl(205, 33%, 90%);
+    border-radius: 5px;
+}
+
+
+.dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution span {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 850px) {
+    html {
+        font-size: 15px;
+    }
+
+    .notification-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 13px;
+    }
+
+    .main-container {
+        padding: 0;
+    }
+
+    .notification-container {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .notification{
+        padding: 15px;
+    }
+
+    .head h1 {
+        font-size: 1.6rem
+    }
+
+    .Ncount {
+        padding: 3px 10px;
+        font-size: 1rem;
+    }
+
+    .notification img {
+        width: 45px;
+        height: 45px;
+        margin-right: 20px;
+    }
+
+    .attribution{
+        font-size: 12px;
+    }
+
+}
